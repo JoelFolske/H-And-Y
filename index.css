@@ -79,7 +79,6 @@
 
 .slideshow-container {
   position: relative;
-  height: 700px;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -119,7 +118,7 @@
 
 @media only screen and (max-width: 600px) {
   .slideshow-slide img {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 
@@ -161,6 +160,10 @@
   .next {
     margin-left: 8px;
   }
+    .prev, .next {
+    font-size: 20px;
+    padding: 5px;
+  }
 }
 
 
@@ -174,7 +177,7 @@
 .services {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 .service {

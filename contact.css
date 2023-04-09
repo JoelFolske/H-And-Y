@@ -138,7 +138,53 @@
 
 
 
+/* Center align the dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
 
+/* Style for the store hours dropdown button */
+.dropbtn {
+  background-color: #2196F3;
+  color: white;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* On hover, darken the background color */
+.dropbtn:hover {
+  background-color: #0b7dda;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  margin-top: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style for the dropdown content paragraphs */
+.dropdown-content p {
+  color: #000000;
+  font-size: 14px;
+  padding: 8px 0;
+  margin: 0;
+}
+
+/* Show the dropdown content when the button is clicked */
+.show {
+  display: block;
+}
 
 
 
