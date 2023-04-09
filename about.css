@@ -81,17 +81,23 @@
 
 /* content styles */
 .content{
-    padding-left:2rem;
+  padding-left:2rem;
+
+}
+.board{
+    display:flex;
 
 }
 .content_left {
     padding: 2rem;
     width: 40%;
+    float: left;
   }
   
   .content_right{
     padding: 2rem;
     width:40%;
+    float: right;
   }
   .about_us {
     font-size: 2rem;
