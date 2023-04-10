@@ -1,78 +1,81 @@
+/* style the navbar */
+
+/* style the navbar */
 .navbar {
-    background-color: #e2e2e2;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  /* style the logo */
-  .navbar img {
-    height: 50px;
-    margin-left: 10px;
-  }
-  /* style the links */
+  background-color: #e2e2e2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+/* style the logo */
+.navbar img {
+  height: 50px;
+  margin-left: 10px;
+}
+/* style the links */
+.navbar a {
+  color: #4b4545;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* style the hamburger menu button */
+.hamburger {
+  display: none; /* hide the button by default */
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+/* style the three horizontal lines */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-in-out;
+}
+/* style the middle line for the hamburger menu */
+.hamburger span:nth-child(2) {
+  top: calc(50% - 6px);
+}
+/* style the bottom line for the hamburger menu */
+.hamburger span:last-child {
+  top: calc(50% + 6px);
+}
+/* style the active state for the hamburger menu button */
+.hamburger.active span:first-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* media query for smaller screens */
+@media (max-width: 768px) {
   .navbar a {
-    color: #4b4545;
-    text-decoration: none;
-    margin: 0 10px;
+    display: none; /* hide the links by default */
   }
-  /* style the hamburger menu button */
   .hamburger {
-    display: none; /* hide the button by default */
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-    position: relative;
+    display: block; /* show the hamburger menu button */
   }
-  /* style the three horizontal lines */
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #000000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.2s ease-in-out;
-  }
-  /* style the middle line for the hamburger menu */
-  .hamburger span:nth-child(2) {
-    top: calc(50% - 6px);
-  }
-  /* style the bottom line for the hamburger menu */
-  .hamburger span:last-child {
-    top: calc(50% + 6px);
-  }
-  /* style the active state for the hamburger menu button */
-  .hamburger.active span:first-child {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active span:last-child {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  /* media query for smaller screens */
-  @media (max-width: 768px) {
-    .navbar a {
-      display: none; /* hide the links by default */
-    }
-    .hamburger {
-      display: block; /* show the hamburger menu button */
-    }
-  }
-  
-  .center-logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
-  }
-  
+}
+
+.center-logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
 
 
 /*About us*/
@@ -124,7 +127,7 @@
     margin-bottom: 1rem;
     padding-top:2rem;
     border-bottom: 0.5rem solid rgb(235, 166, 5);
-    width: 7rem;
+    width: 10rem;
     font-weight: bold
 }
 
@@ -132,7 +135,7 @@
 
 /*Footer*/
 
-  @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
 * {
   padding: 0;
   margin: 0;
